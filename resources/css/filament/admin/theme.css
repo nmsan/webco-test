@@ -6,7 +6,6 @@
 
 @config 'tailwind.config.js';
 
-/* Custom Filament sidebar background color */
 .filament-sidebar {
     @apply bg-primary;
 }
