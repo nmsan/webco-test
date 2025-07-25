@@ -123,4 +123,8 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'asmorphic' => [
+        'username' => env('ASMORPHIC_USERNAME'),
+        'password' => env('ASMORPHIC_PASSWORD'),
+    ]
 ];

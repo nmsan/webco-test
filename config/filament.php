@@ -98,4 +98,10 @@ return [
 
     'system_route_prefix' => 'filament',
 
+    'assets' => [
+        'css' => [
+            'css/filament/admin/theme.css',
+        ],
+    ],
+
 ];
