@@ -1,4 +1,3 @@
-
 <?php
 
 namespace App\Filament\Resources\ProductCategoryResource\RelationManagers;
@@ -40,7 +39,6 @@ class TypesRelationManager extends RelationManager
                 //
             ])
             ->headerActions([
-                Tables\Actions\AttachAction::make(),
                 Tables\Actions\CreateAction::make(),
             ])
             ->actions([
