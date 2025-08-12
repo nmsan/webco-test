@@ -17,7 +17,7 @@ class FilamentUserSeeder extends Seeder
             ['email' => 'admin@test.com'],
             [
                 'name' => 'Admin User',
-                'password' => Hash::make('secret123'), // change to a secure password
+                'password' => bcrypt('secret123'), // change to a secure password
             ]
         );
 
@@ -30,7 +30,7 @@ class FilamentUserSeeder extends Seeder
         // If you’re using Spatie permissions or Filament Shield
         // $user->assignRole('super_admin');
 
-        $this->command->info("Filament admin user created: admin@example.com / password123");
+        $this->command->info("Filament admin user created: admin@test.com / secret123");
     }
 }
 
