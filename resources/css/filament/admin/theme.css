@@ -6,6 +6,63 @@
 
 @config 'tailwind.config.js';
 
-.filament-sidebar {
-    @apply bg-primary;
+.fi-sidebar {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-right: 1px solid #475569;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fi-sidebar .fi-sidebar-header {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid #475569;
+}
+
+.fi-sidebar .fi-sidebar-nav {
+    background: transparent;
+}
+
+/* Target all text elements in the sidebar */
+.fi-sidebar * {
+    color: #e2e8f0 !important;
+}
+
+/* Specific targeting for navigation items */
+.fi-sidebar .fi-sidebar-item,
+.fi-sidebar .fi-sidebar-item a,
+.fi-sidebar .fi-sidebar-item span,
+.fi-sidebar .fi-sidebar-item-label,
+.fi-sidebar .fi-sidebar-item-text {
+    color: #e2e8f0 !important;
+    transition: all 0.2s ease;
+}
+
+.fi-sidebar .fi-sidebar-item:hover,
+.fi-sidebar .fi-sidebar-item:hover a,
+.fi-sidebar .fi-sidebar-item:hover span,
+.fi-sidebar .fi-sidebar-item:hover .fi-sidebar-item-label,
+.fi-sidebar .fi-sidebar-item:hover .fi-sidebar-item-text {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+}
+
+.fi-sidebar .fi-active {
+    color: #16a34a !important;
+}
+
+.fi-sidebar .fi-sidebar-nav .fi-sidebar-item.fi-active {
+    background: rgba(59, 130, 246, 0.2);
+    color: #16a34a !important;
+}
+
+/* Ensure active items maintain their color */
+.fi-sidebar .fi-sidebar-item.fi-active *,
+.fi-sidebar .fi-sidebar-item.fi-active a,
+.fi-sidebar .fi-sidebar-item.fi-active span,
+.fi-sidebar .fi-sidebar-item.fi-active .fi-sidebar-item-label,
+.fi-sidebar .fi-sidebar-item.fi-active .fi-sidebar-item-text {
+    color: #16a34a !important;
+}
+
+.fi-sidebar span .fi-sidebar-item-label {
+    color: #e2e8f0 !important;
 }
