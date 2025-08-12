@@ -21,3 +21,9 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+
+# Database files
+*.sqlite
+*.sqlite3
+database/*.sqlite
+database/*.sqlite3
