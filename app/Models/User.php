@@ -11,7 +11,12 @@ use Illuminate\Support\Str;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, FilamentUser;
+
+    public function canAccessFilament(): bool
+    {
+        return str_ends_with($this->email, '@example.com') || str_ends_with($this->email, '@admin.com');
+    }
 
     /**
      * The attributes that are mass assignable.
